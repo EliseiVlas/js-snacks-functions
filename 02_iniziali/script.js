@@ -3,11 +3,21 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
+
 // Dichiara la funzione qui.
 
+function primaParola(stringa){
+    
+    const caratteriIesimo = []
+
+    for (let i = 0; i < stringa.length; i++){
+        caratteriIesimo.push(stringa[i][0]);
+    }
+    return caratteriIesimo
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(primaParola(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
