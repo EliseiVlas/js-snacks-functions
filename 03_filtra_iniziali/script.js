@@ -13,14 +13,28 @@ function nomeSpecifico(nomi){
 
     for (let i = 0; i < nomi.length; i++){
         // se liniziale del nome e uguale a liniziale che inserisce l'user inseriscila nel array vuoto
-        if(nomi[i][0] === leter)
+        if(nomi[i][0] === leter){
             listaNomi.push(nomi[i])
+        }
     }
     return listaNomi
 }
+const nomeSpecifico2 = nomi2 => {
 
+    // Creo un array vuoto
+    const listaNomi2 = []
+
+    for (let i = 0; i < nomi2.length; i++){
+        // se liniziale del nome e uguale a liniziale che inserisce l'user inseriscila nel array vuoto
+        if(nomi2[i][0] === leter){
+            listaNomi2.push(nomi2[i])
+        }
+    }
+    return listaNomi2
+}
 // Invoca la funzione qui e stampa il risultato in console
 console.log(nomeSpecifico(names));
+console.log(nomeSpecifico2(names));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
