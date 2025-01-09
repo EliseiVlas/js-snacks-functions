@@ -3,19 +3,33 @@
 const word = 'javascript';
 
 // Dichiara la funzione qui.
-function primaaParola(stringa){
+function primaParola(stringa){
     
-    // creeo un arrai vuoto
+    const lettere = ["a", "e", "i", "o", "u"]
     
+    let numeriVocali = 0;
 
-   
-        return stringa.split('').filter(vocale => 'aeiouAEIOU'.includes(vocale)).length 
-   
+    let vocaliTrovate = []
+    
+    for ( let i = 0; i < stringa.length; i++){
+       if(lettere.includes(stringa[i])){
+        numeriVocali++
+
+        vocaliTrovate.push(stringa[i])
+       
+        
+        
+       }
+       
+    }
+    console.log(vocaliTrovate.length);
+    return numeriVocali + " " + vocaliTrovate;
+    
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(primaaParola(word));
+console.log(primaParola(word));
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
