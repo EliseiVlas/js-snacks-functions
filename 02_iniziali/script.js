@@ -8,9 +8,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 function primaParola(stringa){
     
+    // creeo un arrai vuoto
     const caratteriIesimo = []
 
     for (let i = 0; i < stringa.length; i++){
+        
+        // aggiungo nel arrai vuoto ogni iniziale dei nomi
         caratteriIesimo.push(stringa[i][0]);
     }
     return caratteriIesimo
